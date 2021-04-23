@@ -245,6 +245,9 @@ height: 50px;
     background-color:  rgb(180, 102, 102);
     display: flex;
     flex-wrap: wrap;
+    animation: animation2 10s;
+    animation-direction: alternate;
+    animation-duration: infinite;
 }
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 #img1{
@@ -278,8 +281,10 @@ height: 50px;
     position: relative;
     align-items: center;
     text-align: left;
-    animation: animation1 4s;
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Zen Dots', cursive;    
+    animation: animation3 10s;
+    animation-direction: alternate;
+    animation-duration: infinite;
 }
 
 #about_box_2 ul{
@@ -324,7 +329,44 @@ height: 50px;
 }
 /*------------------------Skills------------------------*/
 
-/*------------------------Projects & CP------------------------*/
+/*------------------------CP------------------------*/
+#cp h1{
+    padding-top: 20px;
+}
+.cp_content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+
+.cp_media img{
+    width: 290px;
+}
+
+.cp_jist{
+    padding: 10px 10px;
+    background-color: #fff;
+    color: #333;
+    opacity: 0.5;
+    align-self: stretch;
+}
+
+.cp_jist:hover{
+    opacity: 1;
+}
+
+.cp_media:hover + .project_jist{
+    opacity: 1;
+}
+
+.cp_media:hover{
+    opacity: 0.5;
+}
+/*------------------------CP------------------------*/
+
+/*------------------------Projects------------------------*/
 #projects h1{
     padding-top: 20px;
 }
@@ -372,6 +414,42 @@ height: 50px;
 }
 /*------------------------Projects------------------------*/
 
+/*------------------------Contact Footer------------------------*/
+#footer-image {
+    opacity: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 80px;
+}
+  
+#footer-image2 {
+    opacity: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 75px;
+}
+  
+#footer-image3 {
+    opacity: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 73px;
+}
+#footer-image4 {
+    opacity: 1;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 80px;
+}
+.media{
+    margin-top: 7vh;
+    display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+  
+/*------------------------Contact Footer------------------------*/
+
 /*------------------------Footer------------------------*/
 .main_footer{
     background-color: #333;
@@ -387,5 +465,33 @@ height: 50px;
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes animation2{
+    0%{
+        background-color: rgb(180, 102, 102);
+    }
+    33%{
+        background-color:rgb(192, 170, 71);
+    }
+    66%{
+        background-color: rgb(98, 0, 255);
+    }
+    100%{
+        background-color: rgb(53, 97, 9);
+    }
+}
+@keyframes animation3{
+    0%{
+        color: rgb(180, 102, 102);
+    }
+    33%{
+        color: rgb(192, 170, 71);
+    }
+    66%{
+        color: rgb(98, 0, 255);
+    }
+    100%{
+        color: rgb(53, 97, 9);
     }
 }
