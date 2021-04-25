@@ -29,7 +29,7 @@ section{
 }
 
 section:nth-child(even){
-    background-color: #333;
+    background-color:rgb(139, 105, 77);
     color: #fff;
 }
 
@@ -67,7 +67,7 @@ button:hover{
     display: flex;
     height: 80px;
     justify-content: space-between;
-    background-color: #333;
+    background-color: rgb(59, 2, 2);
     padding-bottom: 0;
     opacity: 0.9;
 }
@@ -103,10 +103,10 @@ button:hover{
 
 .navbar a:hover,a:active{
     color: black;
-    background-color: #fff;
+    background-color: rgb(139, 105, 77);
     text-shadow: none;
     font-weight: bold;
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 1px 1px 2px #555;
     box-shadow: 2px 2px 8px #fff;
     animation: appear 2s;
 } 
@@ -239,6 +239,7 @@ height: 50px;
 #about{
     position: relative;
     text-align: center;
+    font-family: 'Bangers', cursive;
 }
 
 .info_box{
@@ -247,12 +248,14 @@ height: 50px;
     flex-wrap: wrap;
     animation: animation2 10s;
     animation-direction: alternate;
-    animation-duration: infinite;
+    animation-iteration-count:infinite;
 }
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 #img1{
     border-radius: 180px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 #about_box_1{
     background-color:white;
@@ -284,7 +287,7 @@ height: 50px;
     font-family: 'Zen Dots', cursive;    
     animation: animation3 10s;
     animation-direction: alternate;
-    animation-duration: infinite;
+    animation-iteration-count:infinite;
 }
 
 #about_box_2 ul{
@@ -299,11 +302,16 @@ height: 50px;
 
 /*------------------------Skills------------------------*/
 
+#c2{
+    font-family: 'Bangers', cursive;
+}
+
 #skills ul{
     padding: 0;
     font-size: 50px;
     line-height: 1.5em;
     text-align: center;
+    font-family: 'Bangers', cursive;
 }
 
 #skills li li{
@@ -321,17 +329,23 @@ height: 50px;
 #skills .list{
     display: flex;
     justify-content: space-evenly; 
-    font-size: 40px; 
+    font-size: 40px;
+    color: black; 
+    font-family: 'Bangers', cursive;
 }
 
 #skills img{
-    width: 100px;
+    width: 90px;
+    animation: magnify 4s;
+    width: 90px;
 }
 /*------------------------Skills------------------------*/
 
 /*------------------------CP------------------------*/
+
 #cp h1{
     padding-top: 20px;
+    font-family: 'Bangers', cursive;
 }
 .cp_content{
     display: flex;
@@ -369,6 +383,7 @@ height: 50px;
 /*------------------------Projects------------------------*/
 #projects h1{
     padding-top: 20px;
+    font-family: 'Bangers', cursive;
 }
 .project_content{
     display: flex;
@@ -415,7 +430,11 @@ height: 50px;
 /*------------------------Projects------------------------*/
 
 /*------------------------Contact Footer------------------------*/
-#footer-image {
+#c5{
+    font-family: 'Bangers', cursive;
+}
+
+/* #footer-image {
     opacity: 1;
     align-items: center;
     margin-bottom: 20px;
@@ -434,18 +453,35 @@ height: 50px;
     align-items: center;
     margin-bottom: 20px;
     height: 73px;
-}
+} */
 #footer-image4 {
     opacity: 1;
     align-items: center;
     margin-bottom: 20px;
-    height: 80px;
+    height: 60px;
 }
+
+#footer-image:hover{
+    opacity: 0.8;
+}
+
+#footer-image2:hover{
+    opacity: 0.8;
+}
+
+#footer-image3:hover{
+    opacity: 0.8;
+}
+
+#footer-image4:hover{
+    opacity: 0.7;
+}
+
 .media{
     margin-top: 7vh;
     display: flex;
-      justify-content: space-around;
-      align-items: center;
+    justify-content: space-around;
+    align-items: center;
 }
   
 /*------------------------Contact Footer------------------------*/
@@ -471,13 +507,13 @@ height: 50px;
     0%{
         background-color: rgb(180, 102, 102);
     }
-    33%{
+    20%{
         background-color:rgb(192, 170, 71);
     }
-    66%{
-        background-color: rgb(98, 0, 255);
+    40%{
+        background-color: rgba(43, 22, 77, 0.315);
     }
-    100%{
+    80%{
         background-color: rgb(53, 97, 9);
     }
 }
@@ -485,13 +521,21 @@ height: 50px;
     0%{
         color: rgb(180, 102, 102);
     }
-    33%{
+    20%{
         color: rgb(192, 170, 71);
     }
-    66%{
-        color: rgb(98, 0, 255);
+    40%{
+        color: rgba(43, 22, 77, 0.315);
     }
-    100%{
+    80%{
         color: rgb(53, 97, 9);
+    }
+}
+@keyframes magnify {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90px;
     }
 }
