@@ -187,24 +187,6 @@ height: 50px;
     animation: animation1 4s;
 }
 
-#showcase .short_text:nth-child(1){
-    transform: translate(-50%,-150%);
-    animation-fill-mode: forwards;
-}
-
-.short_text:nth-child(2),.short_text:nth-child(3){
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-#showcase .short_text:nth-child(3){
-    height: 200px;
-    top: 35%;
-}
-
-#showcase .short_text:nth-child(2){
-    transform: translate(-50%,60%);
-}
 
 /*------------------------showcase------------------------*/
 
