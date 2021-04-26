@@ -178,8 +178,8 @@ height: 50px;
 
 #showcase .short_text{
     position: absolute;
-    text-align: centre;
-    top: 40%;
+    text-align: -webkit-center;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 50px;
