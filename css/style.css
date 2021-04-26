@@ -173,18 +173,28 @@ height: 50px;
 }
 
 #showcase{
-    padding-top: 1080px;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Bangers', cursive;
+    animation: animation1 4s;
 }
 
 #showcase .short_text{
-    position: absolute;
+    /* position: absolute; */
     text-align: -webkit-center;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    /* top: 20%;
+    left: 50%; */
+    /* transform: translateX(-50%); */
     font-size: 50px;
     text-shadow: 2px 2px 2px black;
     animation: animation1 4s;
+
 }
 
 
@@ -198,9 +208,9 @@ height: 50px;
 }
 
 #img1{
-    position: fixed;
+    /* position: fixed;
     top: 200px;
-    left: 50px;
+    left: 50px; */
     display: inline-block;
     height: 300px;
     padding-bottom: 0;
@@ -319,8 +329,9 @@ height: 50px;
 
 #skills img{
     width: 90px;
+}
+#skills .animation01{
     animation: magnify 4s;
-    width: 90px;
 }
 /*------------------------Skills------------------------*/
 
@@ -497,7 +508,7 @@ height: 50px;
         background-color: rgba(43, 22, 77, 0.315);
     }
     80%{
-        background-color: rgb(53, 97, 9);
+        background-color: rgb(145, 38, 6);
     }
 }
 @keyframes animation3{
@@ -511,7 +522,7 @@ height: 50px;
         color: rgba(43, 22, 77, 0.315);
     }
     80%{
-        color: rgb(53, 97, 9);
+        color: rgb(145, 38, 6);;
     }
 }
 @keyframes magnify {
